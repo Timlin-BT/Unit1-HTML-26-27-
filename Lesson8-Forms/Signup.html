@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORMS</title>
+</head>
+
+<body>
+    <h1>Club Sign Up</h1>
+    <form action="display.html" method="get">
+        <label for="Full name">Full name:</label>
+        <input type="text" id="Full name" name="Full name" value="Mango" required> <br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" placeholder="abc123@gmail.com" required> <br>
+        <label for="Age">Age:</label>
+        <input type="number" id="Age" name="Age" min="0" max="99"> <br>
+        <label for="start date">Start date:</label>
+        <input type="date" id="start date" name="startdate" required> <br>
+        <fieldset>
+            <legend>Select Grade Level</legend>
+            <label for="grade-9">Grade 9</label>
+            <input type="radio" name="grade" id="grade-9" value="9">
+            <label for="grade-10">Grade 10</label>
+            <input type="radio" name="grade" id="grade-10">
+            <label for="grade-11">Grade 11</label>
+            <input type="radio" name="grade" id="grade-11">
+            <label for="grade-12">Grade 12</label>
+            <input type="radio" name="grade" id="grade-12"> <br>
+            <select name="period" id=""> Select Period
+                <option value="" Disabled selected>Select Period</option>
+                <option value="1">Period 1</option>
+                <option value="2">Period 2</option>
+                <option value="3">Period 3</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>What days can you meet?</legend>
+            <label for="Mon">Monday</label>
+            <input type="checkbox" name="day of the week" id="Mon" value="Mon">
+            <label for="Tues">Tuesday</label>
+            <input type="checkbox" name="day of the week" id="Tues">
+            <label for="Wedn">Wednesday</label>
+            <input type="checkbox" name="day of the week" id="Wedn">
+            <label for="Thur">Thursday</label>
+            <input type="checkbox" name="day of the week" id="Thur">
+            <label for="Fri">Friday</label>
+            <input type="checkbox" name="day of the week" id="Fri">
+        </fieldset>
+
+        <p><label for="Why?">Why would you like to join?</label></p>
+        <p><textarea name="Why?" id="Why?" rows="5"></textarea></p>
+        <button type="submit">Join the Club</button>
+    </form>
+
+</body>
+
+</html>
