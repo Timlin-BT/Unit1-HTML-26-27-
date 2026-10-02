@@ -6,23 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <style>
-.card{ background-color: yellow;}
+        .card {
+            background-color: yellow;
+        }
+
+        .highlight {
+            background-color: salmon;
+        }
+
+        #main-nav {
+            color: blue;
+        }
+
+        #site-footer {
+            color: rgb(8, 151, 8);
+        }
+
+        .card {
+            border: 2px solid rgb(248, 108, 218);
+            border-width: 22px;
+        }
+
+        .card {
+            border-radius: 10px;
+        }
+        .price {color: darkcyan; font-weight: 600;}
     </style>
 </head>
 
 <body>
-    <p class="highlight"></p>
-    <p class="highlight"></p>
-    <p class="highlight"></p>
-  <!-- (.card>h2+p)*2 -->
-   <div class="card">
-    <h2>Product A</h2>
-    <p>First Product</p>
-   </div>
-   <div class="card">
-    <h2>Product B</h2>
-    <p>2nd Product</p>
-   </div>
+    <nav id="main-nav">...Nav Links...</nav>
+    <p class="highlight">First Note</p>
+    <p class="highlight">Second Note</p>
+    <p class="highlight">Third Note</p>
+    <p>plain ahh note </p>
+    <!-- (.card>h2+p)*2 -->
+    <div class="card">
+        <h2>Product A</h2>
+        <p>First Product</p>
+    </div>
+    <div class="card">
+        <h2>Product B</h2>
+        <p>2nd Product</p>
+    </div>
+<p>THe price is 
+    <span class="price">$29</span>
+     tdy only</p>
+
 
     <footer id="site-footer">2026 </footer>
 </body>
